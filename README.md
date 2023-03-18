@@ -35,3 +35,5 @@
         
         5
         
+待完善功能：
+1. python对外部接收的复杂结构参数，可采用 [pygob](https://github.com/eyotang/pygob) 和 [go gob](https://pkg.go.dev/encoding/gob) 进行参数和返回值的数据传递。
