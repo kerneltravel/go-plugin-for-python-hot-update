@@ -22,16 +22,16 @@
     apt install patchelf    
         否则报错：```FATAL: Error, standalone mode on Linux requires 'patchelf' to be installed. Use 'apt/dnf/yum install patchelf' first.```
     2.2  编译：
-    
         ```python3 -m nuitka   --output-filename=main --onefile --verbose main.py```
     
     2.3 运行： 
-        ```./main```
+        ./main  输出信息：
         
-        输出信息：
-        ```
         /root/goplugin-python/greet.so
+        
         Hello, number 
+        
         1 +2 = 3 
+        
         5
-        ```
+        
