@@ -9,20 +9,29 @@
 注意：
 1. windows 下go编译的dll如果是32位，则python也要32位。保持数位一致，否则会报错： 无法识别的dll 格式。
     windows 下的main.py 得到可执行文件的 编译过程：
-    Python38/python.exe -m nuitka   --output-filename=main.exe --onefile --verbose main.py
+    
+    ```Python38/python.exe -m nuitka   --output-filename=main.exe --onefile --verbose main.py```
 
 2. linux下的编译过程：
     2.1 工具安装：
     #安装 nuitka 工具
-    pip3 install  -i  https://mirrors.aliyun.com/pypi/simple/ nuitka
+    
+    ```pip3 install  -i  https://mirrors.aliyun.com/pypi/simple/ nuitka```
 
     #安装 patchelf 工具以支持nuitka 的 onefile模式编译
     apt install patchelf    
-        否则报错：FATAL: Error, standalone mode on Linux requires 'patchelf' to be installed. Use 'apt/dnf/yum install patchelf' first.
+        否则报错：```FATAL: Error, standalone mode on Linux requires 'patchelf' to be installed. Use 'apt/dnf/yum install patchelf' first.```
     2.2  编译：
-    2.3 运行： ./main
+    
+        ```python3 -m nuitka   --output-filename=main --onefile --verbose main.py```
+    
+    2.3 运行： 
+        ```./main```
+        
         输出信息：
-                /root/goplugin-python/greet.so
-                Hello, number 
-                1 +2 = 3 
-                5
+        ```
+        /root/goplugin-python/greet.so
+        Hello, number 
+        1 +2 = 3 
+        5
+        ```
