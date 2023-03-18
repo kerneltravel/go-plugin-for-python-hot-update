@@ -1,0 +1,9 @@
+greet.go 编译得到 dll/so 动态库的命令：
+
+windows ：
+    cd go-greet-dll-code
+    go build -o greet.dll -buildmode=c-shared greet.go
+
+linux:
+    cd go-greet-dll-code
+    go build -o greet.so -buildmode=c-shared greet.go
